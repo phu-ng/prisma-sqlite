@@ -1,0 +1,14 @@
+name: Print Message
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: self-hosted
+    steps:
+      - name: Print a message
+        run: echo "Hello, GitHub Actions!"
+
